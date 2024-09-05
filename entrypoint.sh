@@ -4,7 +4,7 @@ echo "=====test1"
 
 git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${INPUT_EMAIL}"
-git config --add safe.directory /github/workspace
+git config --global --add safe.directory /github/workspace
 
 python3 /usr/bin/feed.py
 
